@@ -12,6 +12,7 @@ import * as Yup from 'yup';
 import {Formik} from 'formik';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
 import BgChanger from './android/Component/BgChanger';
+import RollDice from './android/Component/RollDice';
 
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
@@ -181,6 +182,7 @@ export default function App() {
         ) : null}
       </SafeAreaView>
       <BgChanger />
+      <RollDice />
     </ScrollView>
   );
 }
