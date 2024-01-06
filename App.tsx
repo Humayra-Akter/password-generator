@@ -11,6 +11,7 @@ import React, {useState} from 'react';
 import * as Yup from 'yup';
 import {Formik} from 'formik';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
+import BgChanger from './android/Component/BgChanger';
 
 const PasswordSchema = Yup.object().shape({
   passwordLength: Yup.number()
@@ -179,6 +180,7 @@ export default function App() {
           </View>
         ) : null}
       </SafeAreaView>
+      <BgChanger />
     </ScrollView>
   );
 }
