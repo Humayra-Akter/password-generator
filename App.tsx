@@ -155,7 +155,7 @@ export default function App() {
                   <TouchableOpacity
                     disabled={!isValid}
                     style={styles.primaryBtn}
-                    onPress={handleSubmit}>
+                    onPress={() => handleSubmit()}>
                     <Text style={styles.primaryBtnTxt}>Generate Password</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
